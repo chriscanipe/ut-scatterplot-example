@@ -1,6 +1,17 @@
 
-function init() {
+
+d3.csv("data/life-expectancy-vs-health-expenditure.csv", function(error, data) {
+    if (error) throw error;
+
+    init(data);
     
+})
+
+function init() {
+
+    /* DEFINE THE DIMESIONS OF OUR CHART */
+    // Width, height, etc.
+
     let margin = {
         top: 30,
         right: 30,
@@ -14,6 +25,13 @@ function init() {
     let width = targetWidth - margin.left - margin.right;
     let height = targetHeight - margin.top - margin.bottom;
 
+    /* ================================== */
+
+
+
+    /* DEFINE OUR SCALE FUNCTIONS */
+    // Scales turn our values into pixel positions
+
     let xScale = d3.scaleLinear() //This is a linear scale
         .rangeRound([0, width]) //Its "range" is the width of `this.plot`
         .domain([0,100]); //Let's default to 0 to 100.
@@ -21,6 +39,14 @@ function init() {
     let yScale = d3.scaleLinear()
         .rangeRound([height, 0])
         .domain([0,100]);
+
+    /* ================================== */
+
+
+
+
+    /* WRITE SOME ELEMENTS ONTO THE PAGE */
+    // This is where we start drawing our chart
 
     //SVG is the container.
     let svg = d3.select(".chart").append("svg");
@@ -56,12 +82,6 @@ function init() {
             d3.axisLeft(yScale)
             .tickSize(-width - 20)
         );
+
 }
 
-
-d3.csv("data/life-expectancy-vs-health-expenditure.csv", function(error, data) {
-    if (error) throw error;
-
-    init(data);
-
-})

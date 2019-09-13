@@ -4,19 +4,19 @@ We'll be working with Life Expectany vs. Health Care Cost dataset from [here](ht
 
 ### To get started:
 
-1. Go to [https://github.com/chriscanipe/ut-scatterplot](https://github.com/chriscanipe/ut-scatterplot)
+1. Go to [https://github.com/chriscanipe/ut-scatterplot-example](https://github.com/chriscanipe/ut-scatterplot-example)
 
-1. Clone the repo:
+2. Clone the repo:
   `git clone git@github.com:chriscanipe/dead-simple-d3.git scatterplot-example`
 
-2. Start a Python simple server:
+3. Start a Python simple server:
   `python3 -m http.server`
   *or*
   `python -m SimpleHTTPServer` if using an old version of Python
 
-3. Go to `http://localhost:8888` in your browser (preferably Chrome)
+4. Go to `http://localhost:8888` in your browser (preferably Chrome)
 
-4. Open Dev Tools in your browser
+5. Open Dev Tools in your browser
   * View > Developer > Developer Tools
   * Settings > Network > Make sure "Disable cache" is checked
 

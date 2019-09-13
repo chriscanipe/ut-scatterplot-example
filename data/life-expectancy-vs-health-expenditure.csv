@@ -1,4 +1,4 @@
-Entity,Code,Year,"Life expectancy at birth, total (years) (years)",Health expenditure (2010 int.-$) (int.-$),Total population (Gapminder)
+Entity,Code,Year,Life expectancy at birth,Health expenditure,Total population
 Afghanistan,AFG,1800,,,3280000
 Afghanistan,AFG,1820,,,3280000
 Afghanistan,AFG,1870,,,4207000
