@@ -1,0 +1,39 @@
+/* font-family properties for the Google fonts we're loading
+---------------------------------------------------------------
+sans: "Source Sans Pro", Helvetica, Arial, sans-serif !default;
+serif: "Domine", Georgia, serif !default;
+*/
+
+h1 {
+  margin-bottom: 8px;
+}
+
+#main-content {
+    width: 100%;
+    max-width: 900px;
+    font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+}
+
+.chart {
+  width: 100%;
+  height: 500px;
+}
+
+.axis text {
+  fill: #333;
+  pointer-events: none;
+}
+
+.axis .tick text {
+  font-size: 12px;
+}
+
+.axis line, .axis path {
+  stroke: #999;
+  stroke-width: 0.5;
+  pointer-events: none;
+}
+
+.axis .domain {
+  display: none;
+}
